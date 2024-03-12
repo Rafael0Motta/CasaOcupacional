@@ -23,7 +23,6 @@ import { MdMedicalServices } from "react-icons/md";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { FaLocationDot } from "react-icons/fa6";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import HomeIcon from "@mui/icons-material/Home";
 
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -81,7 +80,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="top-menu">
+      <div className="top-menu-container">
         <div className="top-menu-social-media">
           <a
             href="https://www.facebook.com/Ammarhesconsultoria/"
@@ -114,7 +113,7 @@ const Navbar = () => {
         <div className="top-menu-itens">
           <div className="text-top-menu">
             <p>
-              <span className="text-top-menu-span">PABX: </span>
+              <span className="span-top-menu">PABX: </span>
               <a href="tel:+552122629752">(21)2262-9752</a>
             </p>
           </div>
@@ -144,9 +143,9 @@ const Navbar = () => {
         </div>
       </div>
       <nav>
-        <div className="nav-logo-container">
+        <div className="navbar-logo-container">
           <a href="#">
-            <img src={Logo} alt="Logo Ammarhes" className="nav-logo" />
+            <img src={Logo} alt="Logo Ammarhes" className="navbar-logo" />
           </a>
         </div>
         <div className="navbar-links-container">
@@ -167,7 +166,7 @@ const Navbar = () => {
             Agende seu exame
           </a>
         </div>
-        <div className="navbar-menu-container">
+        <div className="hamburguer-menu-mobile">
           <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
         </div>
         <Drawer
@@ -184,7 +183,7 @@ const Navbar = () => {
             <List>
               {menuOptions.map((item) => (
                 <ListItem key={item.text} disablePadding>
-                  <a href={item.link} className="navbar-menu-link">
+                  <a href={item.link} className="navbar-menu-link-mobile">
                     <ListItemButton>
                       <ListItemIcon>{item.icon}</ListItemIcon>
                       <ListItemText primary={item.text} />
@@ -198,27 +197,18 @@ const Navbar = () => {
             <div className="infos-mobile">
               <div className="text-top-menu-mobile">
                 <p>
-                  <span className="text-top-menu-span">PABX: </span>
-                  <a href="tel:+552122629752">
-                    <PhoneRoundedIcon id="phone-menu-icon" />
-                     (21)2262-9752
-                  </a>
+                  <span className="text-top-menu-span">PABX: </span> <br />
+                  <a href="tel:+552122629752">(21)2262-9752</a>
                 </p>
               </div>
               <div className="text-top-menu-mobile">
                 <p>
-                  <a href="tel:+552120260011">
-                    <PhoneRoundedIcon id="phone-menu-icon" />
-                     (21)2026-0011
-                  </a>
+                  <a href="tel:+552120260011">(21)2026-0011</a>
                 </p>
               </div>
               <div className="text-top-menu-mobile">
                 <p>
-                  <a href="tel:+5521985096408">
-                    <PhoneRoundedIcon id="phone-menu-icon" />
-                     (21)98509-6408
-                  </a>
+                  <a href="tel:+5521985096408">(21)98509-6408</a>
                 </p>
               </div>{" "}
               <div className="text-top-menu-mobile">

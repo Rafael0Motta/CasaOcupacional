@@ -5,7 +5,44 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* NAV BAR | TOP MENU */
+
+.top-menu-container {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    background: #0E58A8;
+    justify-content: space-evenly;
+    padding: 10px 75px;
+}
+
+.top-menu-social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.text-top-menu a {
+    text-decoration: none;
+    border-bottom: solid 1px #0E58A8;
+    color: #fff;
+}
+
+.text-top-menu p {
+    color: #fff;
+    margin: 0;
+}
+
+.text-top-menu a:hover {
+    border-bottom: solid 1px #fff;
+}
+
+.span-top-menu {
+    font-weight: 500;
+    color: #fff;
+}
+
 /* NAV BAR */
+
 nav {
     width: 100%;
     background-color: #fff;
@@ -16,12 +53,8 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nav-logo {
+.navbar-logo {
     width: 225px;
-}
-
-.navbar-menu-container {
-    display: none;
 }
 
 .navbar-links-container a {
@@ -50,69 +83,117 @@ nav {
     border: none;
 }
 
-.navbar-menu-container svg {
+.hamburguer-menu-mobile {
+    display: none;
+}
+
+.hamburguer-menu-mobile svg {
     font-size: 25px;
     cursor: pointer;
 }
 
-.navbar-menu-link {
+.navbar-menu-link-mobile {
     text-decoration: none;
     color: #222;
 }
 
-.navbar-menu-link:hover {
+.navbar-menu-link-mobile:hover {
     color: #247BA0;
 }
 
-.top-menu {
-    width: 100%;
-    display: flex;
-    gap: 50px;
+.phone-menu-icon {
+    color: #707070;
+}
+
+/* ALTERAR NOME  */
+
+.companies-container {
     background: #0E58A8;
-    justify-content: space-evenly;
-    padding: 10px 75px;
+    padding: 1px;
 }
 
-.text-top-menu a {
-    text-decoration: none;
-    border-bottom: solid 1px #0E58A8;
-    color: #fff;
-}
-
-.text-top-menu p {
-    color: #fff;
-    margin: 0;
-}
-
-.text-top-menu a:hover {
-    border-bottom: solid 1px #fff;
-}
-
-.text-top-menu-span {
-    font-weight: 500;
-    color: #fff;
-}
-
-.top-menu-social-media{ 
+.companies-logos-container {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.companies-logos-imgs {
+    width: 200px;
+    height: 75px;
+}
+
+.logo-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
-#phone-menu-icon{ 
-    color: #707070;
+.logo-link-button {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: solid 1px #0E58A8;
+}
+
+.logo-link-button:hover {
+    border-bottom: solid 1px #fff;
+}
+
+
+#saude10 {
+    width: 150px;
+}
+
+/* TESTE bem vindo a casa */
+
+.bem-vindo {
+    background-image: url("./Assets/bg.png");
+    padding: 1px;
+}
+
+.bem-vindo2, .border-10px {
+    text-align: center;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.title {
+    color: #808080;
+    font-size: 24px;
+}
+
+.P-title {
+    font-size: 30px;
+    color: #0b4575;
+}
+
+.P-paragrafo {
+    font-size: 17px;
+}
+
+.list-unstyled {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1200px) {
 
-    .top-menu {
+    .top-menu-container {
         display: none;
     }
 
-    .text-top-menu p {
+    .text-top-menu-mobile p {
         color: #222;
     }
 
-    .text-top-menu-span {
+    .span-top-menu {
         color: #222;
         display: flex;
         justify-content: center;
@@ -122,7 +203,7 @@ nav {
         display: none;
     }
 
-    .navbar-menu-container {
+    .hamburguer-menu-mobile {
         display: unset;
     }
 
