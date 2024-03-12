@@ -151,28 +151,28 @@ nav {
 
 /* TESTE bem vindo a casa */
 
-.bem-vindo {
+.welcome {
     background-image: url("./Assets/bg.png");
     padding: 1px;
 }
 
-.bem-vindo2, .border-10px {
+.welcome-content-text, .hours-open-container {
     text-align: center;
     width: 75%;
     margin: 20px auto;
 }
 
-.title {
+.welcome-content-span {
     color: #808080;
     font-size: 24px;
 }
 
-.P-title {
+.welcome-content-title {
     font-size: 30px;
     color: #0b4575;
 }
 
-.P-paragrafo {
+.welcome-content-paragraph {
     font-size: 17px;
 }
 

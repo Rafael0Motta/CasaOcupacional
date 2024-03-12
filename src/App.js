@@ -4,6 +4,7 @@ import "./Components.css";
 /* Components */
 import Home from "./Components/Home";
 import Companies from "./Components/Companies";
+import Welcome from "./Components/Welcome";
 
 /* Pages */
 
@@ -15,6 +16,7 @@ function App() {
       </header>
       <main>
         <Companies />
+        <Welcome />
       </main>
     </>
   );
