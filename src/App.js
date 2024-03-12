@@ -1,15 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import './Components.css'
+import "./Components.css";
 
 /* Components */
-import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
 
 /* Pages */
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Home />
     </>
   );
 }
