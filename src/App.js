@@ -5,6 +5,8 @@ import "./Components.css";
 import Home from "./Components/Home";
 import Companies from "./Components/Companies";
 import Welcome from "./Components/Welcome";
+import Services from "./Components/Services";
+import ScrollButton from "./Components/ScrollButton";
 
 /* Pages */
 
@@ -17,7 +19,9 @@ function App() {
       <main>
         <Companies />
         <Welcome />
+        <Services />
       </main>
+      <ScrollButton />
     </>
   );
 }

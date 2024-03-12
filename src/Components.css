@@ -105,7 +105,7 @@ nav {
     color: #707070;
 }
 
-/* ALTERAR NOME  */
+/* SECTION COMPANIES */
 
 .companies-container {
     background: #0E58A8;
@@ -149,9 +149,9 @@ nav {
     width: 150px;
 }
 
-/* TESTE bem vindo a casa */
+/* SECTION WELCOME */
 
-.welcome {
+.welcome-section {
     background-image: url("./Assets/bg.png");
     padding: 1px;
 }
@@ -182,6 +182,79 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
+/* SECTION SERVICES */
+
+.services-container h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    padding: 50px;
+}
+
+.grid-items {
+    display: flex;
+    gap: 20px;
+    width: 500px;
+    margin: 20px;
+}
+
+.grid-items i {
+    margin: auto;
+    color: #0d6efd;
+}
+
+.grid-items svg {
+    font-size: 30px;
+}
+
+.button-open-alert2 {
+    font-size: 14px !important;
+    border: none !important;
+    color: #212529 !important;
+    border-bottom: solid 1px #fff !important;
+    text-transform: lowercase !important;
+}
+
+.button-open-alert2:hover {
+    border-bottom: solid 1px #212529 !important;
+}
+
+.css-qfso29-MuiTypography-root-MuiDialogContentText-root {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+/* SCROLL BUTTON */
+
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(11, 97, 189, 0.812);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top-button.visible {
+    display: inline-block;
+}
+
+.scroll-to-top-button:hover {
+    opacity: 0.9;
+}
+
 
 @media (max-width: 1200px) {
 
