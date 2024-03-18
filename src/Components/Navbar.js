@@ -57,7 +57,7 @@ const Navbar = () => {
           <FaLocationDot />
         </IconContext.Provider>
       ),
-      link: "#contact-section",
+      link: "#exames",
     },
     {
       text: "Agende seu exame",
@@ -87,7 +87,7 @@ const Navbar = () => {
             aria-label="https://www.facebook.com/Ammarhesconsultoria/"
             target="_blank"
           >
-            <IconContext.Provider value={{ size: "15px", color: "#fff" }}>
+            <IconContext.Provider value={{ size: "20px", color: "#fff" }}>
               <FaFacebookSquare />
             </IconContext.Provider>
           </a>
@@ -96,7 +96,7 @@ const Navbar = () => {
             aria-label="https://www.linkedin.com/in/ammarhesconsultoria/"
             target="_blank"
           >
-            <IconContext.Provider value={{ size: "15px", color: "#fff" }}>
+            <IconContext.Provider value={{ size: "20px", color: "#fff" }}>
               <FaLinkedin />
             </IconContext.Provider>
           </a>
@@ -105,40 +105,42 @@ const Navbar = () => {
             aria-label="https://www.instagram.com/ammarhesconsultoria/"
             target="_blank"
           >
-            <IconContext.Provider value={{ size: "15px", color: "#fff" }}>
+            <IconContext.Provider value={{ size: "20px", color: "#fff" }}>
               <FaInstagram />
             </IconContext.Provider>
           </a>
         </div>
-        <div className="top-menu-itens">
-          <div className="text-top-menu">
-            <p>
-              <span className="span-top-menu">PABX: </span>
-              <a href="tel:+552122629752">(21)2262-9752</a>
-            </p>
+        <div className="top-menu-itens-container">
+          <div className="top-menu-itens">
+            <div className="text-top-menu">
+              <p>
+                <span className="span-top-menu">PABX: </span>
+                <a href="tel:+552122629752">(21)2262-9752</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="top-menu-itens">
-          <div className="text-top-menu">
-            <p>
-              <a href="tel:+552120260011">(21)2026-0011</a>
-            </p>
+          <div className="top-menu-itens">
+            <div className="text-top-menu">
+              <p>
+                <a href="tel:+552120260011">(21)2026-0011</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="top-menu-itens">
-          <div className="text-top-menu">
-            <p>
-              <a href="tel:+5521985096408">(21)98509-6408</a>
-            </p>
+          <div className="top-menu-itens">
+            <div className="text-top-menu">
+              <p>
+                <a href="tel:+5521985096408">(21)98509-6408</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="top-menu-itens">
-          <div className="text-top-menu">
-            <p>
-              <a href="mailto:atendimento@casaocupacional.com.br">
-                atendimento@casaocupacional.com.br
-              </a>
-            </p>
+          <div className="top-menu-itens">
+            <div className="text-top-menu">
+              <p>
+                <a href="mailto:atendimento@casaocupacional.com.br">
+                  atendimento@casaocupacional.com.br
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -151,7 +153,7 @@ const Navbar = () => {
         <div className="navbar-links-container">
           <a href="#about">Clínicas</a>
           <a href="#services-section">Faça seu Orçamento</a>
-          <a href="#contact-section">Locais de Atendimento</a>
+          <a href="#exames">Locais de Atendimento</a>
           <a
             href="https://www.agendatecnica.com.br/v2/login.asp"
             target="_blank"
@@ -175,7 +177,7 @@ const Navbar = () => {
           anchor="right"
         >
           <Box
-            sx={{ width: 250 }}
+            sx={{ width: 275 }}
             role="presentation"
             onClick={() => setOpenMenu(false)}
             onKeyDown={() => setOpenMenu(false)}

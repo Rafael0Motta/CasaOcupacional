@@ -118,7 +118,7 @@ const Services = () => {
 
                         <DialogContent>
                           <DialogContentText className="alert-dialog-description">
-                            {item.contentFull}
+                            {item.contentFull}   
                           </DialogContentText>
                         </DialogContent>
                         <DialogActions>

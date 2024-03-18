@@ -11,8 +11,8 @@
     width: 100%;
     display: flex;
     gap: 50px;
-    background: #0E58A8;
-    justify-content: space-evenly;
+    background: #0b4575;
+    justify-content: space-between;
     padding: 10px 75px;
 }
 
@@ -21,9 +21,14 @@
     gap: 20px;
 }
 
+.top-menu-itens-container {
+    display: flex;
+    gap: 25px;
+}
+
 .text-top-menu a {
     text-decoration: none;
-    border-bottom: solid 1px #0E58A8;
+    border-bottom: solid 1px #0b4575;
     color: #fff;
 }
 
@@ -58,7 +63,7 @@ nav {
 }
 
 .navbar-links-container a {
-    margin-right: 40px;
+    margin-right: 30px;
     text-decoration: none;
     color: #222;
     font-size: 16px;
@@ -67,8 +72,8 @@ nav {
 }
 
 .navbar-links-container a:hover {
-    color: #0E58A8;
-    border-bottom: solid 1px #0E58A8;
+    color: #0b4575;
+    border-bottom: solid 1px #0b4575;
 }
 
 #agende {
@@ -108,7 +113,7 @@ nav {
 /* SECTION COMPANIES */
 
 .companies-container {
-    background: #0E58A8;
+    background: #0b4575;
     padding: 1px;
 }
 
@@ -117,7 +122,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin: 30px 0;
     gap: 10px;
     padding-bottom: 10px;
 }
@@ -137,7 +142,7 @@ nav {
 .logo-link-button {
     color: #fff;
     text-decoration: none;
-    border-bottom: solid 1px #0E58A8;
+    border-bottom: solid 1px #0b4575;
 }
 
 .logo-link-button:hover {
@@ -159,6 +164,7 @@ nav {
 .welcome-content-text, .hours-open-container {
     text-align: center;
     width: 75%;
+    padding: 20px;
     margin: 20px auto;
 }
 
@@ -185,6 +191,16 @@ nav {
 
 /* SECTION SERVICES */
 
+.section-service {
+    background-image: url("./Assets/bg.png");
+    padding: 1px;
+}
+
+.services-container {
+    margin: 30px 0;
+    padding: 20px;
+}
+
 .services-container h3 {
     text-align: center;
     margin: 20px;
@@ -195,7 +211,6 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
-    padding: 50px;
 }
 
 .grid-items {
@@ -218,7 +233,7 @@ nav {
     font-size: 14px !important;
     border: none !important;
     color: #212529 !important;
-    border-bottom: solid 1px #fff !important;
+    border-bottom: solid 1px #EAEAEA !important;
     text-transform: lowercase !important;
 }
 
@@ -231,13 +246,113 @@ nav {
     font-weight: 500;
 }
 
+/* NUMBERS SECTION */
+
+.numbers-section {
+    background-color: #0b4575
+}
+
+.numbers-container {
+    display: flex;
+    gap: 40px;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.number-content {
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.number-content h5 {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* SECTION EXAMS */
+
+.section-exams h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 30px 0;
+    font-size: 28px;
+}
+
+.css-heg063-MuiTabs-flexContainer svg {
+    font-size: 30px;
+}
+
+.css-aym9vq-MuiButtonBase-root-MuiTab-root>.MuiTab-iconWrapper {
+    margin-bottom: 15px !important;
+}
+
+.title-tabs {
+    color: #555555;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.paragraph-tabs {
+    color: #777777;
+    font-size: 18px;
+}
+
+.paragraph-tabs-2 {
+    color: #777777;
+    font-size: 15px;
+}
+
+.list-tabs {
+    padding: 0;
+}
+
+.list-tabs-item {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.list-tabs-item svg {
+    font-size: 20px;
+}
+
+#alert-dialog-description {
+    text-align: center;
+}
+
+/* Tab City*/
+
+#tab-icon {
+    width: 25%;
+}
+
+#tab-icon img {
+    width: 35%;
+}
+
+#tabs-citys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#tabs-item-city { 
+    border-bottom: 1px solid #fff;
+}
+
+#tabs-item-city:hover { 
+    border-bottom: 1px solid #0b4575;
+}
+
 /* SCROLL BUTTON */
 
 .scroll-to-top-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(11, 97, 189, 0.812);
+    background-color: #075391;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -255,8 +370,7 @@ nav {
     opacity: 0.9;
 }
 
-
-@media (max-width: 1200px) {
+@media (max-width: 1220px) {
 
     .top-menu-container {
         display: none;
@@ -296,4 +410,36 @@ nav {
         border-bottom: solid 1px #247BA0;
         color: #247BA0;
     }
+
+    /* TABS CITYS */
+
+    #tab-icon {
+        width: 40%;
+    }
+
+    #tab-icon img {
+        width: 40%;
+    }
+
+
+
+}
+
+@media (max-width: 1175px) {
+
+    /* SERVICE SECTION */
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #tabs-citys {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
