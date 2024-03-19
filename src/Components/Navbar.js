@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 /* IMAGES */
 import Logo from "../Assets/Logos/LogoCasaPreto.png";
@@ -39,7 +40,7 @@ const Navbar = () => {
           <MdMedicalServices />
         </IconContext.Provider>
       ),
-      link: "#about",
+      link: "/clinicas",
     },
     {
       text: "Faça seu Orçamento",
@@ -48,7 +49,7 @@ const Navbar = () => {
           <PhoneRoundedIcon />
         </IconContext.Provider>
       ),
-      link: "#services-section",
+      link: "/orcamento",
     },
     {
       text: "Locais de Atendimento",
@@ -57,7 +58,7 @@ const Navbar = () => {
           <FaLocationDot />
         </IconContext.Provider>
       ),
-      link: "#exames",
+      link: "/atendimento",
     },
     {
       text: "Agende seu exame",
@@ -146,14 +147,14 @@ const Navbar = () => {
       </div>
       <nav>
         <div className="navbar-logo-container">
-          <a href="#">
+          <Link to="/">
             <img src={Logo} alt="Logo Ammarhes" className="navbar-logo" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-links-container">
-          <a href="#about">Clínicas</a>
-          <a href="#services-section">Faça seu Orçamento</a>
-          <a href="#exames">Locais de Atendimento</a>
+          <Link to="/clinicas">Clínicas</Link>
+          <Link to="/orcamento">Faça seu Orçamento</Link>
+          <Link to="/atendimento">Locais de Atendimento</Link>
           <a
             href="https://www.agendatecnica.com.br/v2/login.asp"
             target="_blank"
@@ -185,12 +186,12 @@ const Navbar = () => {
             <List>
               {menuOptions.map((item) => (
                 <ListItem key={item.text} disablePadding>
-                  <a href={item.link} className="navbar-menu-link-mobile">
+                  <Link to={item.link} className="navbar-menu-link-mobile">
                     <ListItemButton>
                       <ListItemIcon>{item.icon}</ListItemIcon>
                       <ListItemText primary={item.text} />
                     </ListItemButton>
-                  </a>
+                  </Link>
                 </ListItem>
               ))}
             </List>

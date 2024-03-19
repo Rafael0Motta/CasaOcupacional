@@ -71,16 +71,17 @@ export default function TabsExames() {
   };
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (newValue) => {
+  const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   const tabsContent = [
     {
       title: "Rio de Janeiro",
-      icon: <img src={RJ} />,
+      icon: <img src={RJ} alt="Icone dos estados" />,
+      id: 1,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes nas seguintes cidades do Rio de Janeiro:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: [
         "Centro",
         "Campo Grande",
@@ -105,9 +106,10 @@ export default function TabsExames() {
     },
     {
       title: "São Paulo",
-      icon: <img src={SP} />,
+      icon: <img src={SP} alt="Icone dos estados" />,
+      id: 2,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes nas seguintes cidades de São Paulo:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: [
         "Centro",
         "Campinas",
@@ -124,107 +126,121 @@ export default function TabsExames() {
     },
     {
       title: "Espírito Santo",
-      icon: <img src={ES} />,
+      icon: <img src={ES} alt="Icone dos estados" />,
+      id: 3,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade do Espírito Santo:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Vitória"],
     },
     {
       title: "Distrito Federal",
-      icon: <img src={DF} />,
+      icon: <img src={DF} alt="Icone dos estados" />,
+      id: 4,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade do Distrito Federal:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Brasília"],
     },
     {
       title: "Mato Grosso",
-      icon: <img src={MT} />,
+      icon: <img src={MT} alt="Icone dos estados" />,
+      id: 5,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade de Mato Grosso:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Cuiabá"],
     },
     {
       title: "Goiás",
-      icon: <img src={GO} />,
+      icon: <img src={GO} alt="Icone dos estados" />,
+      id: 6,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade de Goiás:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Rio Verde", "Catalão", "Caldas Novas"],
     },
     {
       title: "Pernambuco",
-      icon: <img src={PE} />,
+      icon: <img src={PE} alt="Icone dos estados" />,
+      id: 7,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes nas seguintes cidades de Pernambuco:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Recife", "Cabo de Santo Agostinho"],
     },
     {
       title: "Bahia",
-      icon: <img src={BA} />,
+      icon: <img src={BA} alt="Icone dos estados" />,
+      id: 8,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade da Bahia:",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Salvador"],
     },
     {
       title: "Piauí",
-      icon: <img src={PI} />,
+      icon: <img src={PI} alt="Icone dos estados" />,
+      id: 9,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade do Piauí",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Piauí"],
     },
     {
       title: "Alagoas",
-      icon: <img src={AL} />,
+      icon: <img src={AL} alt="Icone dos estados" />,
+      id: 10,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade de Alagoas",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Maceió"],
     },
     {
       title: "Paraiba",
-      icon: <img src={PB} />,
+      icon: <img src={PB} alt="Icone dos estados" />,
+      id: 11,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidadeda Paraiba",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Jõao Pessoa"],
     },
     {
       title: "Rio Grande do Norte",
-      icon: <img src={RN} />,
+      icon: <img src={RN} alt="Icone dos estados" />,
+      id: 12,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidadedo Rio Grande Do Norte",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Rio Grande Do Norte"],
     },
     {
       title: "Minas Gerais",
-      icon: <img src={MG} />,
+      icon: <img src={MG} alt="Icone dos estados" />,
+      id: 13,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade do Minas Gerais",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Belo Horizonte", "Lavras"],
     },
     {
       title: "Ceara",
-      icon: <img src={CE} />,
+      icon: <img src={CE} alt="Icone dos estados" />,
+      id: 14,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidadedo Ceara",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Fortaleza", "Crateus", "Sobral"],
     },
     {
       title: "Parana",
-      icon: <img src={PR} />,
+      icon: <img src={PR} alt="Icone dos estados" />,
+      id: 15,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade do Parana",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Curitiba", "Parana"],
     },
     {
       title: "Para",
-      icon: <img src={PA} />,
+      icon: <img src={PA} alt="Icone dos estados" />,
+      id: 16,
       paragraph:
-        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em toda a região. Visando sempre o melhor atendimento e comodidade, estamos presentes na seguinte cidade do Para",
+        "Nosso objetivo é garantir acesso fácil e conveniente aos nossos serviços em todas as regiões. Visando sempre o melhor atendimento e comodidade, estamos presentes nos seguintes locais:",
       listItem: ["Belém"],
     },
   ];
 
   return (
     <>
-      <section className="section-exams" id="exames">
+      <section className="section-city" id="city">
         <h1>Locais de Atendimento</h1>
         <Box sx={{ width: "60%", margin: "50px auto" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -248,11 +264,10 @@ export default function TabsExames() {
           </Box>
 
           {tabsContent.map((item, i) => (
-            <div className="tabs-container">
-              <CustomTabPanel value={value} index={i} key={i}>
+            <div className="tabs-container" key={item.id}>
+              <CustomTabPanel value={value} index={i}>
                 <p className="title-tabs">{item.title}</p>
                 <p className="paragraph-tabs">{item.paragraph}</p>
-                <p className="paragraph-tabs-2">{item.paragraphSeccond}</p>
                 <ul className="list-tabs" id="tabs-citys">
                   {Object.values(item.listItem).map((listItem, index) => (
                     <li

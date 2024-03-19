@@ -157,7 +157,7 @@ nav {
 /* SECTION WELCOME */
 
 .welcome-section {
-    background-image: url("./Assets/bg.png");
+    background-image: url("./Assets/IMGS/bg.png");
     padding: 1px;
 }
 
@@ -192,7 +192,7 @@ nav {
 /* SECTION SERVICES */
 
 .section-service {
-    background-image: url("./Assets/bg.png");
+    background-image: url("./Assets/IMGS/bg.png");
     padding: 1px;
 }
 
@@ -275,7 +275,7 @@ nav {
 
 /* SECTION EXAMS */
 
-.section-exams h1 {
+.section-exams h1, .section-city h1 {
     text-align: center;
     padding: 20px;
     margin: 30px 0;
@@ -338,12 +338,160 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#tabs-item-city { 
+#tabs-item-city {
     border-bottom: 1px solid #fff;
+    width: 50%;
 }
 
-#tabs-item-city:hover { 
+#tabs-item-city:hover {
     border-bottom: 1px solid #0b4575;
+}
+
+/* SECTION LOCATION */
+
+#location-section, .form-section {
+    background-image: url(./Assets/IMGS/bg.png);
+}
+
+.location {
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#location-section h3 {
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px 0 0 0;
+}
+
+.src-UserCard-UserCardBody-styles-module__user-card-body--xMttR {
+    padding-top: 25px !important;
+}
+
+.src-UserCard-UserCardBody-styles-module__user-card-body--xMttR .src-UserCard-UserCardBody-styles-module__user-card-name--lMiwl {
+    margin: 0;
+    color: #000 !important;
+    padding: 10px;
+}
+
+.src-UserCard-UserCardBody-styles-module__user-card-body--xMttR .src-UserCard-UserCardBody-styles-module__user-card-position-name--slXtz {
+    text-align: center;
+    color: #000 !important;
+}
+
+.src-Card-styles-module__card--9xEbS {
+    background-color: #cfcfcf !important;
+}
+
+/* FORM CONTACT */
+
+.form-title h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.form-questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+#alertForm {
+    display: none;
+    margin: 30px 0 !important;
+}
+
+#form-submit {
+    margin: 20px 0;
+}
+
+.ServicosInteresseOptions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url("./Assets/IMGS/footer-bg.png");
+    background-position: initial !important;
+    background-size: initial !important;
+    background-repeat: initial !important;
+    background-attachment: initial !important;
+    background-origin: initial !important;
+    background-clip: initial !important;
+    background-color: rgb(37, 39, 46) !important;
+    padding: 25px;
+}
+
+.socialMedias {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.footer-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    align-items: center;
+}
+
+.footer-content img {
+    width: 225px;
+}
+
+.footer-content p {
+    width: 50%;
+}
+
+.footer-content1 {
+    width: 40%;
+}
+
+.footer-content1 p {
+    margin: 3px;
+}
+
+.footer-content1 svg {
+    font-size: 15px;
+}
+
+.footer-content1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.span-footer:hover {
+    border-bottom: solid 1px #fff;
+}
+
+.bottom-footer {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+.bottom-footer a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* SCROLL BUTTON */
@@ -421,7 +569,25 @@ nav {
         width: 40%;
     }
 
+    /* Footer */
 
+    footer {
+        text-align: center;
+    }
+
+    .footer-content p {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .footer-content1 {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+
+    .footer-content1 p {
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -439,7 +605,11 @@ nav {
 @media (max-width: 1000px) {
 
     #tabs-citys {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(1fr 1fr);
+    }
+
+    .form-questions {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }

@@ -9,13 +9,9 @@ import BannerImage2 from "../Assets/Banner/Banner-002.png";
 import BannerImage3 from "../Assets/Banner/Banner-003.png";
 import BannerImage4 from "../Assets/Banner/Banner-004.png";
 
-/* Components */
-import NavBar from "./Navbar";
-
 const Home = () => {
   return (
     <>
-      <NavBar />
       <Carousel
         autoPlay
         infiniteLoop
