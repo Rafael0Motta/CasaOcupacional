@@ -351,6 +351,7 @@ nav {
 
 #location-section, .form-section {
     background-image: url(./Assets/IMGS/bg.png);
+    padding: 50px 0;
 }
 
 .location {
@@ -467,7 +468,7 @@ footer {
 }
 
 .footer-content1 p {
-    margin: 3px;
+    margin: 10px;
 }
 
 .footer-content1 svg {

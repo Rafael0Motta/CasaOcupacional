@@ -10,7 +10,6 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 /* IMGS */
 import logoCasa from "../Assets/Logos/LogoCasaWhite.png";
-import bg from "../Assets/IMGS/footer-bg.png";
 
 const FooterPage = () => {
   return (
@@ -88,7 +87,7 @@ const FooterPage = () => {
           </a>
         </div>
         &copy; {new Date().getFullYear()} Copyright:
-        <p>Ammarhes: </p>
+        <p>Casa Ocupacional: </p>
       </div>
     </footer>
   );

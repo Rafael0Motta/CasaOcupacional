@@ -1,10 +1,10 @@
 import React from "react";
-import Locais from "../Components/TabsCity";
+import TabsCity from "../Components/TabsCity";
 
 const Atendimento = () => {
   return (
     <>
-      <Locais />
+      <TabsCity />
     </>
   );
 };
