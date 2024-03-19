@@ -163,6 +163,7 @@ export default function TabsExames() {
             >
               {tabsContent.map((item, i) => (
                 <Tab
+                  className="iconsTabsExams"
                   icon={item.icon}
                   {...a11yProps(i)}
                   label={item.title}
