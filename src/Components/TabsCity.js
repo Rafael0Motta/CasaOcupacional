@@ -241,7 +241,7 @@ export default function TabsExames() {
     <>
       <section className="section-city" id="city">
         <h1>Locais de Atendimento</h1>
-        <Box sx={{ width: "60%", margin: "50px auto" }}>
+        <Box sx={{ width: "60%", margin: "50px auto" }} id="box-tab-citys">
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs
               value={value}

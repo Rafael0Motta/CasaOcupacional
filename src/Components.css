@@ -510,12 +510,11 @@ footer {
     .footer-content1 p {
         margin-bottom: 10px;
     }
-
 }
 
 @media (max-width: 1175px) {
-    /* SERVICE SECTION */
 
+    /* SERVICE SECTION */
     .grid-container {
         display: flex;
         flex-wrap: wrap;
@@ -528,7 +527,11 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-    .form-questions {
-        grid-template-columns: 1fr, 1fr;
+    #box-tab-citys {
+        width: 95%;
+    }
+
+    #box-tabs-exames {
+        width: 95%;
     }
 }

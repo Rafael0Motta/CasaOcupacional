@@ -152,7 +152,7 @@ export default function TabsExames() {
     <>
       <section className="section-exams">
         <h1>Exames</h1>
-        <Box sx={{ width: "60%", margin: "50px auto" }}>
+        <Box sx={{ width: "60%", margin: "50px auto" }} id="box-tabs-exames" >
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs
               value={value}
