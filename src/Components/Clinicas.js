@@ -189,7 +189,7 @@ export const Clinicas = () => {
               />
             </div>{" "}
             <div className="content-clinica">
-              <h2>Clinica Nova America</h2>
+              <h2>Clinica Centro</h2>
               <p>Cuidando do seu bem estar</p>
               <ButtonComponent />
               <ButtonHorariosComponent />
