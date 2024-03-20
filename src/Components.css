@@ -525,10 +525,10 @@ footer {
 
 @media (max-width: 1000px) {
     #tabs-citys {
-        grid-template-columns: repeat(1fr 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 
     .form-questions {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr, 1fr;
     }
 }
