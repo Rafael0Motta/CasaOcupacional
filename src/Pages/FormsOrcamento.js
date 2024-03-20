@@ -341,7 +341,7 @@ const FormsOrcamento = () => {
             </Form.Group>
           </div>
           <ReCAPTCHA
-            sitekey=/* "6LfEXpApAAAAAF04IFIPWlaX5UrXapz-m8Sh6Yqa" */ "6LcVVY8pAAAAAFY1bnUCTcnVlvdDSClEMmYKO2bj"
+            sitekey= /* API KEY GOOGLE V2 */ 'dsad'
             onChange={handleCaptchaVerify}
             onExpired={handleCaptchaExpire}
           />
