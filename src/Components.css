@@ -534,4 +534,8 @@ footer {
     #box-tabs-exames {
         width: 95%;
     }
+
+    #tabs-item-city{ 
+        width: 100%;
+    }
 }
