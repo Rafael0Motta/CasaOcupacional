@@ -20,8 +20,8 @@ const Homepage = () => {
         <Companies />
         <Welcome />
         <Numbers />
-        <Services />
         <TabsExames />
+        <Services />
         <TabsCity />
       </main>
       <ScrollButton />

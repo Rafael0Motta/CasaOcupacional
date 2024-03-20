@@ -149,7 +149,6 @@ nav {
     border-bottom: solid 1px #fff;
 }
 
-
 #saude10 {
     width: 150px;
 }
@@ -347,84 +346,6 @@ nav {
     border-bottom: 1px solid #0b4575;
 }
 
-/* SECTION LOCATION */
-
-#location-section, .form-section {
-    background-image: url(./Assets/IMGS/bg.png);
-    padding: 50px 0;
-}
-
-.location {
-    display: flex;
-    padding: 50px;
-    flex-wrap: wrap;
-    gap: 50px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#location-section h3 {
-    text-align: center;
-    margin-top: 30px;
-    padding: 40px 0 0 0;
-}
-
-.src-UserCard-UserCardBody-styles-module__user-card-body--xMttR {
-    padding-top: 25px !important;
-}
-
-.src-UserCard-UserCardBody-styles-module__user-card-body--xMttR .src-UserCard-UserCardBody-styles-module__user-card-name--lMiwl {
-    margin: 0;
-    color: #000 !important;
-    padding: 10px;
-}
-
-.src-UserCard-UserCardBody-styles-module__user-card-body--xMttR .src-UserCard-UserCardBody-styles-module__user-card-position-name--slXtz {
-    text-align: center;
-    color: #000 !important;
-}
-
-.src-Card-styles-module__card--9xEbS {
-    background-color: #cfcfcf !important;
-}
-
-/* FORM CONTACT */
-
-.form-title h3 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.form {
-    width: 75%;
-    margin: 0 auto;
-}
-
-.form-questions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-}
-
-#alertForm {
-    display: none;
-    margin: 30px 0 !important;
-}
-
-#form-submit {
-    margin: 20px 0;
-}
-
-.ServicosInteresseOptions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
-}
-
 /* FOOTER */
 
 footer {
@@ -593,7 +514,6 @@ footer {
 }
 
 @media (max-width: 1175px) {
-
     /* SERVICE SECTION */
 
     .grid-container {
@@ -604,7 +524,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-
     #tabs-citys {
         grid-template-columns: repeat(1fr 1fr);
     }
@@ -612,5 +531,4 @@ footer {
     .form-questions {
         grid-template-columns: repeat(1, 1fr);
     }
-
 }

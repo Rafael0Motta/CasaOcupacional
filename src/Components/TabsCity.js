@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 /* ICONS */
-
 import AL from "../Assets/Icons/AL.png";
 import BA from "../Assets/Icons/BA.png";
 import CE from "../Assets/Icons/CE.png";
