@@ -13,18 +13,13 @@ import TabsCity from "../Components/TabsCity";
 const Homepage = () => {
   return (
     <>
-      <header>
-        <Banner />
-      </header>
-      <main>
-        <Companies />
-        <Welcome />
-        <Numbers />
-        <TabsExames />
-        <Services />
-        <TabsCity />
-      </main>
-      <ScrollButton />
+      <Banner />
+      <Companies />
+      <Welcome />
+      <Numbers />
+      <TabsExames />
+      <Services />
+      <TabsCity />
     </>
   );
 };

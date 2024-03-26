@@ -5,6 +5,7 @@ import "./Pages.css";
 /* Components */
 import NavBar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ScrollToTopButton from "./Components/ScrollButton";
 
 /* Pages */
 import Homepage from "./Pages/Homepage";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/orcamento" element={<FormOrcamento />} />
           <Route path="/clinicas" element={<Clinicas />} />
         </Routes>
+        <ScrollToTopButton />
         <Footer />
       </BrowserRouter>
     </>
