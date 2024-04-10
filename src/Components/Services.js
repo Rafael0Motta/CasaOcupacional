@@ -11,7 +11,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 /* ICONS */
 
 import { FaFolder } from "react-icons/fa";
-import { FaProjectDiagram } from "react-icons/fa";
 import { FaAmbulance } from "react-icons/fa";
 import { FaStethoscope } from "react-icons/fa";
 import { FaEnvira } from "react-icons/fa";
